@@ -328,11 +328,9 @@ $(function () {
                 type: 'histogram',
                 opacity: 0.5,
                 marker: {
-                    // color: '#969d8e',
                     color: '#6b6b6b',
                     line: {
                         color: '#000000',
-                        // color: '#4f4f4f',
                         width: 2.5
                     }
                 },
@@ -382,7 +380,6 @@ $(function () {
                 x: data_linear['x'],
                 y: data_linear['y'],
                 type: 'scatter',
-                // mode: 'lines+markers',
                 mode: 'markers',
                 fill: 'tonexty',
                 line: {
@@ -400,6 +397,209 @@ $(function () {
                 title: "вероятность"
             }
             Plotly.newPlot('id_linear_1_int', [plot_data], layout, {responsive: true});
+        }
+    }
+
+    // ----------- FIRST BASED ON INTERMEDIATE -----------
+    {
+        {
+            let layout = {
+                height: 700,
+                autosize: true,
+                title: 'Гистограмма признака',
+                xaxis: {
+                    title: "значение признака",
+                    showline: true,
+                    linecolor: '#000000',
+                    showgrid: true,
+                },
+                yaxis: {
+                    title: "количество семплов",
+                    showline: true,
+                    linecolor: '#000000',
+                },
+                font: {
+                    size: 12,
+                    color: '#000000'
+                }
+            };
+            let plot_data = {
+                x: data_hist,
+                type: 'histogram',
+                marker: {
+                    color: 'rgba(143,143,143,0.3)',
+                    line: {
+                        color: '#000000',
+                        width: 2
+                    }
+                },
+                nbinsx: 21,
+            };
+            let steps = [];
+            for (let s = 1; s < 1001; s += 10) {
+                steps.push({
+                    label: s,
+                    value: s,
+                    method: 'restyle',
+                    args: ['nbinsx', s]
+                })
+            }
+            layout['sliders'] = [{
+                active: 2,
+                pad: {
+                    t: 60
+                },
+                currentvalue: {
+                    prefix: 'число бинов: ',
+                    font: {
+                        color: '#000000',
+                        size: 10
+                    }
+                },
+                steps: steps
+            }];
+            Plotly.newPlot('id_hist_1_bsd', [plot_data], layout, {responsive: true});
+        }
+        {
+            let layout = {
+                height: 700,
+                autosize: true,
+                xaxis: {
+                    title: {
+                        text: "значение признака"
+                    }
+                },
+                yaxis: {
+                    showline: true,
+                    title: "вероятность"
+                },
+                font: {
+                    size: 12,
+                    color: '#000000'
+                }
+            };
+            let plot_data = {
+                x: data_linear['x'],
+                y: data_linear['y'],
+                type: 'scatter',
+                mode: 'lines+markers',
+                fill: 'tonexty',
+                fillcolor: 'rgba(143,143,143,0.3)',
+                line: {
+                    color: '#000000',
+                    opacity: 0.75
+                },
+                marker: {
+                    symbol: 'circle',
+                    size: 5,
+                    color: '#000000'
+                }
+            };
+            layout['title'] = 'Плотность распределения вероятности';
+            Plotly.newPlot('id_linear_1_bsd', [plot_data], layout, {responsive: true});
+        }
+    }
+
+    // ----------- SECOND BASED ON INTERMEDIATE -----------
+    {
+        {
+            let layout = {
+                height: 700,
+                autosize: true,
+                title: 'Гистограмма признака',
+                xaxis: {
+                    title: "значение признака",
+                    showline: true,
+                    linecolor: '#000000',
+                    showgrid: true,
+                },
+                yaxis: {
+                    title: "количество семплов",
+                    showline: true,
+                    linecolor: '#000000',
+                },
+                font: {
+                    size: 12,
+                    color: '#000000'
+                }
+            };
+            let plot_data = {
+                x: data_hist,
+                type: 'histogram',
+                marker: {
+                    color: 'rgba(143,143,143,0.3)',
+                    line: {
+                        color: '#4d4d4d',
+                        width: 2
+                    }
+                },
+                nbinsx: 21,
+            };
+            let steps = [];
+            for (let s = 1; s < 1001; s += 10) {
+                steps.push({
+                    label: s,
+                    value: s,
+                    method: 'restyle',
+                    args: ['nbinsx', s]
+                })
+            }
+            layout['sliders'] = [{
+                active: 2,
+                pad: {
+                    t: 60
+                },
+                currentvalue: {
+                    prefix: 'число бинов: ',
+                    font: {
+                        color: '#000000',
+                        size: 10
+                    }
+                },
+                steps: steps
+            }];
+            Plotly.newPlot('id_hist_2_bsd', [plot_data], layout, {responsive: true});
+        }
+        {
+            let layout = {
+                height: 700,
+                autosize: true,
+                xaxis: {
+                    title: {
+                        text: "значение признака"
+                    }
+                },
+                yaxis: {
+                    showline: true,
+                    title: "вероятность"
+                },
+                font: {
+                    size: 12,
+                    color: '#000000'
+                }
+            };
+            let plot_data = {
+                x: data_linear['x'],
+                y: data_linear['y'],
+                type: 'scatter',
+                mode: 'lines+markers',
+                fill: 'tonexty',
+                fillcolor: 'rgba(143,143,143,0.3)',
+                line: {
+                    color: '#4d4d4d',
+                    // opacity: 0.75
+                },
+                marker: {
+                    symbol: 'circle',
+                    size: 5,
+                    color: '#4d4d4d'
+                }
+            };
+            layout['title'] = 'Плотность распределения вероятности';
+            layout['yaxis'] = {
+                title: "вероятность"
+            }
+            Plotly.newPlot('id_linear_2_bsd', [plot_data], layout, {responsive: true});
         }
     }
 })
