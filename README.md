@@ -70,6 +70,20 @@
   На большом числе бинов (до 500 и больше 500):<br>
   ![second_bsd_hist_bins_less.png](pictures/second_bsd_hist_bins_less.png)
   ![second_bsd_hist_bins_more.png](pictures/second_bsd_hist_bins_more.png)
+  <br>
+- Также для рассмотрения:
+  - Маркеры 5
+  - Зеленые цвета
+  - Черный текст
+  - Заливка под графиком плотности распределения вероятности
+  - Обводка столбцов гистограммы
+  - Рамка графика
+  ![first_add_tog.png](pictures/first_add_tog.png)
+  ![first_add_hist.png](pictures/first_add_hist.png)
+  ![first_add_line.png](pictures/first_add_line.png)
+  На большом числе бинов (до 500 и больше 500):<br>
+  ![first_add_hist_bins_less.png](pictures/first_add_hist_bins_less.png)
+  ![first_add_hist_bins_more.png](pictures/first_add_hist_bins_more.png)
 
 <br>Что, я считаю, стоит оставить:
 - Обводка столбцов, потому что это позволяет избежать сливание столбцов, когда их высота равна
