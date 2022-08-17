@@ -1,6 +1,6 @@
 # Различные варианты оформления графиков в Plotly
 
-[Графики в новом стиле](https://github.com/bmstu-iu8-2021-project/new_plots)
+[Графики в новом стиле](https://github.com/petiayko/plotly_designs/tree/master/new_plots)
 
 Все изображения (гистограмма, линейный график вместе и на странице аналитики):<br>
 
