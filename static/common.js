@@ -688,8 +688,7 @@ $(function () {
                 fill: 'tonexty',
                 fillcolor: 'rgba(98,166,44,0.3)',
                 line: {
-                    color: '#63b623',
-                    width: 3
+                    color: '#63b623'
                 },
                 marker: {
                     symbol: 'circle',
