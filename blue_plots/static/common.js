@@ -99,10 +99,10 @@ $(function () {
                 y: [Object.values(values[i])[0]],
                 name: i,
                 marker: {
-                    color: 'rgba(0, 123, 255, 0.3)',
+                    color: 'rgba(0, 123, 255, 0.5)',
                     line: {
                         color: 'rgb(0, 123, 255)',
-                        width: 1
+                        width: 2
                     }
                 },
                 error_y: {
@@ -269,7 +269,7 @@ $(function () {
                 }
             ],
             line: {
-                color: 'rgba(0, 123, 255, 0.3)',
+                color: 'rgba(0, 123, 255, 0.5)',
             }
         });
         Plotly.newPlot('id_parallel', plot, layout, {responsive: true});

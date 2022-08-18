@@ -9,10 +9,12 @@
 ![aim_boxplot_2.png](../pictures/blue_aim_boxplot_2.png)
 - Парная гистограмма
 ![only_hist.png](../pictures/blue_only_hist.png)
-![aim_hist.png](../pictures/blue_aim_hist.png)
+![blue_aim_hist_1.png](../pictures/blue_aim_hist_1.png)
+![blue_aim_hist_2.png](../pictures/blue_aim_hist_2.png)
 - Параллельные координаты
 ![only_parallel.png](../pictures/blue_only_parallel.png)
-![aim_parallel.png](../pictures/blue_aim_parallel.png)
+![blue_aim_parallel_1.png](../pictures/blue_aim_parallel_1.png)
+![blue_aim_parallel_2.png](../pictures/blue_aim_parallel_2.png)
 - Точечная диаграмма
 ![only_scatter.png](../pictures/blue_only_scatter.png)
 ![aim_scatter_1.png](../pictures/blue_aim_scatter_1.png)
