@@ -216,7 +216,7 @@ $(function () {
                 // name: col_a_type !== 'binary' ? cols.b + ' = 1' : cols.a + ' = 1',
                 name: 'second',
                 marker: {
-                    color: 'rgba(0,61,136,0.3)',
+                    color: 'rgba(10,124,243,0.75)',
                     line: {
                         color: 'rgb(0, 123, 255)',
                         width: 1
