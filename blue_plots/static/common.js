@@ -204,9 +204,13 @@ $(function () {
                 // name: col_a_type !== 'binary' ? cols.b + ' = 0' : cols.a + ' = 0',
                 name: 'first',
                 marker: {
-                    color: 'rgba(0, 123, 255, 0.3)',
+                    // color: 'rgba(0, 123, 255, 0.3)',
+                    // color: 'rgba(117,125,141,0.3)',
+                    // color: 'rgba(91,99,116,0.3)',
+                    color: 'rgba(91,99,116,0.3)',
                     line: {
-                        color: 'rgb(0, 123, 255)',
+                        // color: 'rgba(117,125,141)',
+                        color: 'rgba(91,99,116)',
                         width: 1
                     }
                 }
@@ -217,6 +221,7 @@ $(function () {
                 name: 'second',
                 marker: {
                     color: 'rgba(10,124,243,0.75)',
+                    // color: 'rgba(117,125,141,0.3)',
                     line: {
                         color: 'rgb(0, 123, 255)',
                         width: 1
