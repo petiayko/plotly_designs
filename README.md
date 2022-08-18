@@ -1,6 +1,7 @@
 # Различные варианты оформления графиков в Plotly
 
-[Графики в новом стиле](https://github.com/petiayko/plotly_designs/tree/master/new_plots)
+[Парные графики в сером цвете](https://github.com/petiayko/plotly_designs/tree/master/grey_plots)
+[Парные графики в синем цвете](https://github.com/petiayko/plotly_designs/tree/master/blue_plots)
 
 Все изображения (гистограмма, линейный график вместе и на странице аналитики):<br>
 
